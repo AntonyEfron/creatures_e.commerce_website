@@ -1,0 +1,54 @@
+
+.card{
+    display: block;
+    height: 11rem;
+    width: 14rem;
+    align-items: center;
+    
+} 
+.image{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 3px 4px 3px rgba(0,0,0,0.7);
+}
+.image img{
+    transition: all linear .3s;
+}
+img.simg{
+    position: absolute;
+    height: 11rem;
+    width: 13rem;  
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.image:hover img{
+    opacity: 0;
+}
+.fimg{
+   
+        object-fit: cover;
+        height: 11rem;
+        width: 13rem;
+        
+}
+.image:hover img.simg{
+    opacity: 1;
+}
+.detail{
+    display: block;
+    padding-left: 13px;
+}
+.title{
+    display: flex;
+    justify-content: flex-start;
+}
+.price{
+    display: flex;
+    justify-content: flex-start;
+}

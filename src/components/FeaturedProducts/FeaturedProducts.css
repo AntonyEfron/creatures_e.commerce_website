@@ -1,0 +1,22 @@
+.bottomFeature{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 15rem;
+}
+.topFeature{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+.h3{
+    flex: 2;
+    text-transform: capitalize;
+    
+}
+.p{
+    flex: 3;
+    color: gray;
+    text-align: justify;
+    padding-right: 6rem;
+}
