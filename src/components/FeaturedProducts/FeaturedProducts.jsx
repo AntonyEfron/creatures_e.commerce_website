@@ -10,7 +10,7 @@ function FeaturedProducts({type}) {
             img2:"img/Card_images/iphone.jpeg",
             title:'Food',
             isNew:true,
-            oldPrice:'56rs',
+            oldPrice:'56',
             price:'50'
         },
         {
@@ -19,7 +19,7 @@ function FeaturedProducts({type}) {
             img2:"img/Card_images/iphone.jpeg",
             title:'Food',
             isNew:true,
-            oldPrice:'56rs',
+            oldPrice:'56',
             price:'50'
         },
         {
@@ -28,7 +28,7 @@ function FeaturedProducts({type}) {
             img2:"img/Card_images/iphone.jpeg",
             title:'Food',
             isNew:true,
-            oldPrice:'56rs',
+            oldPrice:'56',
             price:'50'
         },
         {
@@ -37,12 +37,12 @@ function FeaturedProducts({type}) {
             img2:"img/Card_images/iphone.jpeg",
             title:'Food',
             isNew:true,
-            oldPrice:'56rs',
+            oldPrice:'56',
             price:'50'
         }
     ]
     return ( 
-        <div className="featureditems" style={{paddingTop:'4rem'}}>
+        <div className="featureditems" style={{paddingTop:'4rem',paddingBottom:'4rem'}}>
             <div className="topFeature">
                 <h3 className='h3'><b>{type} Products</b></h3>
                 <p className='p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita a maiores quae doloribus animi reiciendis ducimus doloremque non quia molestias beatae recusandae mollitia accusantium,</p>

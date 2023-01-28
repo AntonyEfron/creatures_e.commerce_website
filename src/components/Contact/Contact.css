@@ -1,0 +1,16 @@
+.contactFooter{
+    
+    background-color: #83EBA1;
+    padding: 15px;
+
+
+}
+.wrapperFooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.email{
+    display: flex;
+    
+}

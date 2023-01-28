@@ -5,7 +5,7 @@ function Card({item}) {
     return ( 
         
            <Link to={`/products/${item.id}`} style={{textDecoration:'none',color:'gray'}}>
-        <div className="card">
+        <div className="cardd" >
             <div className="image">
                 <img src={item.img} alt="" className='fimg'/>
                 <img src={item.img2} alt="" className='simg'/>

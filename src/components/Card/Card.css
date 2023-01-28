@@ -1,15 +1,14 @@
 
-.card{
+.cardd{
     display: block;
-    height: 11rem;
+    height: 14rem;
     width: 14rem;
-    align-items: center;
-    
+    align-items: center;  
 } 
 .image{
     position: relative;
     width: 200px;
-    height: 150px;
+    height: 155px;
     border-radius: 8px;
     overflow: hidden;
     margin: 10px;
@@ -43,10 +42,11 @@ img.simg{
 .detail{
     display: block;
     padding-left: 13px;
+    width: 100%;
 }
 .title{
-    display: flex;
-    justify-content: flex-start;
+   display: flex;
+
 }
 .price{
     display: flex;

@@ -13,7 +13,7 @@
 .col-l{
     flex: 2;
 }
-.row{
+.rows{
     flex: 1;
     display: flex;
     gap: 10px;
@@ -23,7 +23,7 @@
     
 }
 
-button{
+#link{
     position: absolute;
     min-width: 100px;
     width: fit-content;

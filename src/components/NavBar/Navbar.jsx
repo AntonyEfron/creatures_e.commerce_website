@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     return ( 
-        <div className='navbar'>
+        
          <div className='wrapper'>
          <div className='leftnav'>
          <div className='items'>
@@ -46,7 +46,7 @@ function Navbar() {
             <GrassIcon style={{cursor:"pointer"}}/>
          </div>  
          </div>       
-        </div>
+        
      );
 }
 
