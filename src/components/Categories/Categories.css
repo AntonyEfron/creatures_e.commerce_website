@@ -22,6 +22,14 @@
     border-radius: 10px;
     
 }
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    text-decoration: none;
+    color: black;
+}
 
 #link{
     position: absolute;
@@ -40,7 +48,8 @@
    
 }
 #link:hover{
-    background-color: #A0FAB6;
+    background-color:rgba(232, 131, 131, 0.648);
+    
 }
 
 

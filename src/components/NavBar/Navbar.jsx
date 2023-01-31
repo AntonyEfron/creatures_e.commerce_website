@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import GrassIcon from '@mui/icons-material/Grass';
 import FavoriteBorderTwoToneIcon from '@mui/icons-material/FavoriteBorderTwoTone';
@@ -7,21 +7,32 @@ import LocationSearchingTwoToneIcon from '@mui/icons-material/LocationSearchingT
 import "./Navbar.css";
 import { Link } from 'react-router-dom';
 
+
 function Navbar() {
+   const [ navbar,setNavbar] = useState(false)
+   const changeNavbarOpacity =()=>{
+      if (window.scrollY >= 80) {
+         setNavbar(false)
+      }else{
+         setNavbar(true)
+      }
+   }
+   window.addEventListener('scroll',changeNavbarOpacity);
+
     return ( 
         
-         <div className='wrapper'>
+         <div className={navbar? 'wrapper': 'active'} >
          <div className='leftnav'>
          <div className='items'>
                <img src="img/india.png" alt="" srcset="" style={{height:"31px",width:'31px'}}/>
+               <ArrowDropDownIcon />
+            </div>
+            <div className={navbar ? 'itemss': 'items'}>
+               <p style={{margin:"0"}}><b>Healing</b></p>
                <ArrowDropDownIcon/>
             </div>
-            <div className='items'>
-               <p style={{margin:"0"}}>Healing</p>
-               <ArrowDropDownIcon/>
-            </div>
-            <div className='items'>
-            <p style={{margin:"0"}}>Climbers</p>
+            <div className={navbar ? 'itemss': 'items'}>
+            <p style={{margin:"0"}}><b>Climbers</b></p>
             <ArrowDropDownIcon/>
             </div>
          </div> 
@@ -31,13 +42,13 @@ function Navbar() {
          <div className='rightnav'>
          <LocationSearchingTwoToneIcon/>
            <div className='items'>
-               <Link className="link"to="/">Feeds</Link>
+               <Link className={navbar? 'linkss':'links'} to="/">Feeds</Link>
             </div>
             <div className='items'>
-               <Link  className="link" to="/">Plantations</Link>
+               <Link  className={navbar? 'linkss':'links'}  to="/">Plantations</Link>
             </div>
             <div className='items'>
-               <Link  className="link" to="/">Orchids</Link>
+               <Link  className={navbar? 'linkss':'links'}  to="/">Orchids</Link>
             </div>
             <FavoriteBorderTwoToneIcon style={{cursor:"pointer"}}/>
             <div>
